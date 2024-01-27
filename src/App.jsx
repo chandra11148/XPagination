@@ -10,7 +10,7 @@ function App() {
     )
       .then((res) => res.json())
       .then((data) => setAllData(data))
-      .catch((err) => console.error(err));
+      .catch((err) => alert("failed to fetch data"));
   }, []);
   const handlePrev = ()=>{
     if(page>1){
